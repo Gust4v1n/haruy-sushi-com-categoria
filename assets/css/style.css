@@ -1,0 +1,190 @@
+@import url('https://fonts.cdnfonts.com/css/roboto');
+
+body{
+    margin: 0;
+    overflow-x: hidden; /* prevent the whole page from scrolling horizontally */
+}
+
+.header{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    height: fit-content;
+    width: 100%;
+    img{
+        width: 300px;
+    }
+}
+
+.menu{
+    margin-top: 10px;
+}
+
+
+
+a{
+    text-decoration:none;
+    color: black;
+}
+
+.banner{
+    margin-top: 30px;
+    font-family: 'Roboto Light', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    word-spacing: 6px;
+    width: 100%;
+}
+
+.coluna-banner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 40px;
+    align-items: center;
+    width: fit-content;
+    justify-self: center;
+    text-align: center;
+    img{
+
+        width: 400px;
+    }
+}
+
+.coluna-text-in-banner{
+    margin-right: 50px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-button{
+    margin-top: 15px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 12px;
+    width: fit-content;
+    height: fit-content;
+    padding: 18px;
+    border: 1px black solid;
+}
+
+.banner-real{
+    margin-top: 40px;
+    width: 100%;
+}
+
+.cardapio{
+    margin-top: 40px;
+    width: 100%;
+    height: fit-content;
+    width: fit-content;
+    justify-self: center;
+    .title{
+        display: flex;
+        font-family: 'Roboto Thin', sans-serif;
+        font-size: 25px;
+        font-weight: 700;
+        justify-content: center;
+    }
+    .categoria{
+        margin-left: 10px;
+        margin-top: 70px;
+        color: #C40C0C;
+        font-family: 'Roboto Light', sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .produto{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+        .nome-preco{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-family: 'Roboto Light', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            .preco{
+                font-family: 'Roboto Light', sans-serif;
+                font-size: 20px;
+                font-weight: 500;
+                letter-spacing: -1px;
+            }
+        }
+        .descricao-produto{
+            font-family: 'Roboto Light', sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: -1px;
+        }
+    }
+    .espacador{
+        height: 150px;
+    }
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #222222;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Roboto Light', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    .titulo{
+        font-family: 'Roboto', sans-serif;
+        font-size: 22px;
+        font-weight: 600;
+        letter-spacing: -1px;
+        margin-bottom: 20px;
+    }
+}
+
+#aborgue {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+#aborgue .bar {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    height: 3px;
+    background-color: black;
+}
+
+#aborgue.open .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    width: 20px;
+}
+
+#aborgue.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+#aborgue.open .bar:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+        width: 20px;
+}
+
+.whatsapp{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
